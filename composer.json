@@ -1,0 +1,29 @@
+{
+    "name": "oriceon/laravel-async-queue",
+    "description": "Async Queue Driver for Laravel (Push to background)",
+    "keywords": ["laravel", "queue", "async", "background"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Valentin Ivașcu",
+            "email": "oriceon@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8",
+        "illuminate/support": "^9",
+        "illuminate/console": "^9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Oriceon\\Queue\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Oriceon\\Queue\\AsyncServiceProvider"
+            ]
+        }
+    }
+}
